@@ -18,7 +18,7 @@ g.maplocalleader = " "
 
 require("lazy").setup {
     -- Theme --
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "getomni/neovim" },
     -- Harpoon --
     {
         "theprimeagen/harpoon",
@@ -37,6 +37,8 @@ require("lazy").setup {
 
     -- Colorizer
     { "NvChad/nvim-colorizer.lua" },
+
+    { "lewis6991/async.nvim" },
 
     {
         {"akinsho/toggleterm.nvim", version = "*", config = true}

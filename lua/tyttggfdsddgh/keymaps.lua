@@ -2,7 +2,7 @@ local map = vim.keymap.set
 local cmd = vim.cmd
 
 -- file management --
-map({"n", "v", "x", "o"}, "<leader>d", ":Telescope file_browser path=%:p:h select_buffer=true<CR>", {silent=true, desc = "Open file browser" })
+--map({"n", "v", "x", "o"}, "<leader>d", ":Telescope file_browser path=%:p:h select_buffer=true<CR>", {silent=true, desc = "Open file browser" })
 map({"n", "v", "x", "o"}, "<leader>w", cmd.w, { desc = "Save current file" })
 map({"n", "v", "x", "o"}, "<leader>r", cmd.so, { desc = "Source current file" })
 map({"n", "v", "x", "o"}, "<leader>q", cmd.q, { desc = "Quit" })
