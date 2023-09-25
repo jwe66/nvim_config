@@ -1,10 +1,10 @@
-require('copilot').setup({
+--[[require('copilot').setup({
   panel = {
     enabled = true,
     auto_refresh = false,
     keymap = {
       jump_prev = "[[",
-      jump_next = "]]",
+      jump_next = "",
       accept = "<CR>",
       refresh = "gr",
       open = "<M-CR>"
@@ -40,4 +40,4 @@ require('copilot').setup({
   },
   copilot_node_command = 'node', -- Node.js version must be > 16.x
   server_opts_overrides = {},
-})
+})]]--

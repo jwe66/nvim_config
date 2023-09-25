@@ -11,13 +11,15 @@ opt.number = true
 opt.numberwidth = 1
 
 
-vim.cmd "highlight Normal guibg=none"
-vim.cmd "highlight NonText guibg=none"
-vim.cmd "highlight Normal ctermbg=none"
-vim.cmd "highlight NonText ctermbg=none"
-vim.cmd "highlight Normal guifg=none"
-vim.cmd "highlight NonText guifg=none"
+vim.cmd "hi Normal guibg=none"
+vim.cmd "hi NonText guibg=none"
+vim.cmd "hi Normal ctermbg=none"
+vim.cmd "hi NonText ctermbg=none"
+vim.cmd "hi Normal guifg=none"
+vim.cmd "hi NonText guifg=none"
 vim.cmd "hi cursorline guibg=none"
+vim.cmd "hi EndOfBuffer guibg=NONE ctermbg=NONE"
+
 -- netrw --
 --g.netrw_banner = 0
 --g.netrw_liststyle = 1

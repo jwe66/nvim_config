@@ -17,13 +17,29 @@ g.mapleader = " "
 g.maplocalleader = " "
 
 require("lazy").setup {
+    -- Comment with gcc and gcA
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        lazy = false,
+    },
+    -- peaking
+    {
+        'nacro90/numb.nvim',
+        opts = {
+        }
+    },
     -- Theme --
     { "getomni/neovim" },
+
     -- Harpoon --
     {
         "theprimeagen/harpoon",
         dependencies = { "nvim-lua/plenary.nvim" },
     },
+
     -- Indents --
     { "lukas-reineke/indent-blankline.nvim" },
     -- File Browser --
@@ -43,17 +59,6 @@ require("lazy").setup {
     {
         {"akinsho/toggleterm.nvim", version = "*", config = true}
     },
-
-    -- Copilot --
-    { 
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
-        config = function()
-            require("copilot").setup({})
-        end,
-
-    },
     -- lsp & completion --
     {
         "VonHeikemen/lsp-zero.nvim",
@@ -64,7 +69,7 @@ require("lazy").setup {
             {
                 "williamboman/mason.nvim",
                 build = function()
-                    pcall(vim.cmd, "MasonUpdate")
+                    vim.cmd[["MasonUpdate"]]
                 end,
             },
             { "williamboman/mason-lspconfig.nvim" },
@@ -97,4 +102,20 @@ require("lazy").setup {
     { "folke/todo-comments.nvim" },
     { "folke/which-key.nvim" },
     { "ThePrimeagen/vim-be-good" },
+    --regex support press ?
+    {
+        'tomiis4/Hypersonic.nvim',
+        event = "CmdlineEnter",
+        cmd = "Hypersonic",
+        config = function()
+            require('hypersonic').setup({
+                border = 'single',
+            })
+        end
+    },
+    {
+        "smjonas/live-command.nvim",
+        -- live-command supports semantic versioning via tags
+        -- tag = "1.*",
+    }
 }
