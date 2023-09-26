@@ -52,7 +52,11 @@ require("lazy").setup {
     -- { "xiyaowong/transparent.nvim" }
 
     -- Colorizer
-    { "NvChad/nvim-colorizer.lua" },
+    {
+        "NvChad/nvim-colorizer.lua",
+        opts = {
+        }
+    },
 
     { "lewis6991/async.nvim" },
 

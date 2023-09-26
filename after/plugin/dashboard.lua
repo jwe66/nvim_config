@@ -29,7 +29,7 @@ start.setup({
             "          ░ ░                                                ░                ░       ░                      "
 		},
 		highlight = "",
-		default_color = "#4288bd",
+		default_color = "#988BC7",
 		oldfiles_amount = 0,
 	},
 
@@ -50,7 +50,7 @@ start.setup({
             { "🎧 Spotify     ",    "Spt",                                   "SPC s" }
 		},
 		highlight = "Title",
-		default_color = "",
+		default_color = "#988BC7",
 		oldfiles_amount = 10,
 	},
 
@@ -63,7 +63,7 @@ start.setup({
 		margin = 5,
 		content = { "󱓞  The world might be on fire, but at least you have a nice Neovim config" },
 		highlight = "MoreMsg",
-		default_color = "",
+		default_color = "#988BC7",
 		oldfiles_amount = 0,
 	},
 
@@ -83,7 +83,7 @@ start.setup({
 	},
 	colors = {
         background = "#1f222700",
-		folded_section = "#56b6c2",
+		folded_section = "#988BC7",
 	},
 	parts = { "header", "body", "footer" },
 })
