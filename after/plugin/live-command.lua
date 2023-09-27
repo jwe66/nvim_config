@@ -20,4 +20,3 @@ require("live-command").setup {
         change = "DiffChange",
     },
 }
-

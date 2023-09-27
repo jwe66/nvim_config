@@ -58,3 +58,8 @@ map({"n", "v", "x", "o"}, "<leader>q", cmd.q, { desc = "Quit" })
 
 -- term --
 -- map("n", "<leader>tt", ":vsp | cd %:p:h | terminal<CR>i")
+
+-- kakoune --
+map("n", "gk", "gg")
+map("n", "gj", "G")
+
