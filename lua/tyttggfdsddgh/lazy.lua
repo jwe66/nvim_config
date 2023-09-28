@@ -17,6 +17,10 @@ g.mapleader = " "
 g.maplocalleader = " "
 
 require("lazy").setup {
+    -- 
+    {
+        'elkowar/yuck.vim',
+    },
     -- Comment with gcc and gcA
     {
         'numToStr/Comment.nvim',
