@@ -11,7 +11,7 @@ require("telescope").setup {
       grouped = false,
       files = true,
       add_dirs = true,
-      depth = 1,
+      depth = 3,
       auto_depth = false,
       select_buffer = false,
       hidden = { file_browser = false, folder_browser = false },
