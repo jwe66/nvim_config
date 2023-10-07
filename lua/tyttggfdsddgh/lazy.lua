@@ -125,5 +125,16 @@ require("lazy").setup {
         "smjonas/live-command.nvim",
         -- live-command supports semantic versioning via tags
         -- tag = "1.*",
-    }
+    },
+
+    -- treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+        event = { "BufReadPre", "BufNewFile" },
+        build = ":TSUpdate",
+        dependencies = {
+            "nvim-treesitter/nvim-treesitter-textobjects",
+            "windwp/nvim-ts-autotag",
+        },
+    },
 }
