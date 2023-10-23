@@ -2,6 +2,7 @@ require("nvim-treesitter.configs").setup {
     -- import nvim-treesitter plugin
     highlight = {
         enable = true,
+        additional_vim_regex_highlighting = false,
     },
     -- enable indentation
     indent = { enable = true },
@@ -29,6 +30,7 @@ require("nvim-treesitter.configs").setup {
         "dockerfile",
         "gitignore",
         "query",
+        "rust",
     },
     incremental_selection = {
         enable = true,

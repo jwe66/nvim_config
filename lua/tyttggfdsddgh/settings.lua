@@ -10,6 +10,7 @@ opt.relativenumber = true
 opt.number = true
 opt.numberwidth = 1
 
+vim.cmd[[syntax enable]]
 
 vim.cmd "hi Normal guibg=none"
 vim.cmd "hi NonText guibg=none"

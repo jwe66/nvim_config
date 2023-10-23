@@ -17,6 +17,11 @@ g.mapleader = " "
 g.maplocalleader = " "
 
 require("lazy").setup {
+
+    {
+      'xiyaowong/transparent.nvim',
+    },
+
     -- 
     {
         'elkowar/yuck.vim',
